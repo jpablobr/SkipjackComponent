@@ -3,6 +3,8 @@ Cakephp Skipjack Component
 
 Cakephp component for connecting to Skipjack API and submit credit card orders.
 
+@version 0.1
+
 <http://jpablobr.com/>
 
 
@@ -97,8 +99,6 @@ Future enhancements:
 Migrate it from cURL to cake’s HttpSocket:
 <http://api.cakephp.org/view_source/http-socket/#line-111>
 
-Browse the source on GitHub: <http://github.com/jpablobr/SkipjackComponent>
-
 Issues
 ------
 
@@ -108,13 +108,11 @@ here](http://github.com/jpablobr/SkipjackComponent/issues). Patches welcome!
 Author
 -------
 
-* @version 0.1
-*
-* Based on Vinay Yadav SkipJack.php original class
-* @link http://www.phpclasses.org/browse/file/4751.html
-*
-* @author Jose Pablo Barrantes <jpablobr@jpablobr.com>
-* @license http://www.opensource.org/licenses/mit-license.php MIT License
+Jose Pablo Barrantes <jpablobr@jpablobr.com>
+license http://www.opensource.org/licenses/mit-license.php MIT License
+
+Based on Vinay Yadav SkipJack.php original class
+http://www.phpclasses.org/browse/file/4751.html
 
 * [Jose Pablo Barrantes][1]
 
@@ -129,34 +127,34 @@ Association Data Mapping, Front Controller and MVC. Our primary goal is to provi
 PHP users at all levels to rapidly develop robust web applications, without any loss to flexibility.
 
 The Cake Software Foundation - promoting development related to CakePHP
-http://www.cakefoundation.org/
+<http://www.cakefoundation.org/>
 
 CakePHP - the rapid development PHP framework
-http://www.cakephp.org
+<http://www.cakephp.org>
 
 Cookbook - user documentation for learning about CakePHP
-http://book.cakephp.org
+<http://book.cakephp.org>
 
 API - quick reference to CakePHP
-http://api.cakephp.org
+<http://api.cakephp.org>
 
 The Bakery - everything CakePHP
-http://bakery.cakephp.org
+<http://bakery.cakephp.org>
 
 The Show - live and archived podcasts about CakePHP and more
-http://live.cakephp.org
+<http://live.cakephp.org>
 
 CakePHP Google Group - community mailing list and forum
-http://groups.google.com/group/cake-php
+<http://groups.google.com/group/cake-php>
 
 #cakephp on irc.freenode.net - chat with CakePHP developers
-irc://irc.freenode.net/cakephp
+<irc://irc.freenode.net/cakephp>
 
 CakeForge - open development for CakePHP
-http://cakeforge.org
+<http://cakeforge.org>
 
 CakePHP gear
-http://www.cafepress.com/cakefoundation
+<http://www.cafepress.com/cakefoundation>
 
 Recommended Reading
-http://astore.amazon.com/cakesoftwaref-20/
+<http://astore.amazon.com/cakesoftwaref-20/>
