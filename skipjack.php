@@ -4,11 +4,6 @@
  *
  * Cakephp component for connecting to Skipjack API and submit credit card orders.
  *
- *
- * @tutorial @link http://jpablobr.com/skipjack/tutorial/
- * @category Component
- * @example @link http://jpablobr.com/skipjack/example/
- *
  * @version 0.1
  *
  * @author Jose Pablo Barrantes <jpablobr@jpablobr.com>
@@ -74,7 +69,7 @@ class SkipjackComponent extends Object {
             7 => 'Aquirer Approval, Base 1 Down',
             8 => 'Aquirer Approval of Referral'
         );
-        
+
 	var $errorCodes = array(
             "1"	  => "Success (Valid Data)",
             "-35" => "Invalid credit card number",
@@ -132,7 +127,6 @@ class SkipjackComponent extends Object {
  * called after Controller::beforeFilter()
  */
     function startup(&$controller) {
-        $HttpSocket = new HttpSocket();
     }
 
 /**
