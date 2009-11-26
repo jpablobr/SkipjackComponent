@@ -31,7 +31,6 @@ Then to be able to use the component you'll need to declare it in your controlle
     }
 
 And call the component from your controller.
-Some usage guidelines are included in the component code above and also below this code.
 
     function payment() {
         // Set development env
@@ -109,10 +108,10 @@ Author
 -------
 
 Jose Pablo Barrantes <jpablobr@jpablobr.com>
-license http://www.opensource.org/licenses/mit-license.php MIT License
+license <http://www.opensource.org/licenses/mit-license.php> MIT License
 
 Based on Vinay Yadav SkipJack.php original class
-http://www.phpclasses.org/browse/file/4751.html
+<http://www.phpclasses.org/browse/file/4751.html>
 
 * [Jose Pablo Barrantes][1]
 
