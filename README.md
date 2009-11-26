@@ -14,7 +14,7 @@ Installation
 * Cakephp 1.2.+
 * PHP 5.+
 
-First install xmllint:
+Install:
 
     * Create a new file in your app/controllers/components directory named 'skipjack.php'.
 
