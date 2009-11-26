@@ -32,7 +32,7 @@ Then to be able to use the component you'll need to declare it in your controlle
 
 And call the component from your controller.
 
-    function payment() {
+        function payment() {
         // Set development env
         $this->Skipjack->setDeveloper(true);
 
@@ -45,15 +45,15 @@ And call the component from your controller.
         // Creates CC donor info that will be post to skipjack
         $ccfields = array();
         $ccfields['OrderNumber'] = $order_id;
-        $ccfields['ItemNumber']  = 'i5';
-        $ccfields['ItemDescription'] = 'Test Item';
-        $ccfields['ItemCost'] = '5.50';
-        $ccfields['Quantity'] = '1';
-        $ccfields['Taxable'] = '0';
-        $ccfields['AccountNumber'] = $ccPostInfo['card_number']; // '4111111111111111';
+        $ccfields['ItemNumber']  = $ccPostInfo['ItemNumber'];
+        $ccfields['ItemDescription'] = $ccPostInfo['ItemDescription'];
+        $ccfields['ItemCost'] = $ccPostInfo['ItemCost'];
+        $ccfields['Quantity'] = $ccPostInfo['Quantity'];
+        $ccfields['Taxable'] = $ccPostInfo['Taxable'];
+        $ccfields['AccountNumber'] = $ccPostInfo['AccountNumber']; // '4111111111111111';
         $ccfields['Month'] = $ccPostInfo['month']; //'08';
         $ccfields['Year'] = $ccPostInfo['year']; // '09'; cake form helper can only display in 4 digit format
-        $ccfields['TransactionAmount'] = $ccPostInfo['donation_amount'] * 100; // < than $100 for test env
+        $ccfields['TransactionAmount'] = $ccPostInfo['TransactionAmount']; // < than $100 for test env
 
         // Sets recommended dummy values
         $this->Skipjack->dummyVals = array(
@@ -74,7 +74,7 @@ And call the component from your controller.
         if($this->Skipjack->process() && $this->Skipjack->isApproved()) {
             $this->Session->setFlash('Transaction approved!');
         } else {
-            $this->Session->setFlash('There was an error in the transaction... Please contact test@test.com');
+            $this->Session->setFlash('There was an error in the transaction...');
         }
     }
 
