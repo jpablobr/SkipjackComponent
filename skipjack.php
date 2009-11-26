@@ -11,11 +11,11 @@
  *
  * @version 0.1
  *
- * Based on Vinay Yadav SkipJack.php original class
- * @link http://www.phpclasses.org/browse/file/4751.html
- *
  * @author Jose Pablo Barrantes <jpablobr@jpablobr.com>
  * @license http://www.opensource.org/licenses/mit-license.php MIT License
+ *
+ * Based on Vinay Yadav SkipJack.php original class
+ * @link http://www.phpclasses.org/browse/file/4751.html
  */
 class SkipjackComponent extends Object {
 
@@ -126,6 +126,31 @@ class SkipjackComponent extends Object {
        } else {
            $this->addfield('DeveloperSerialNumber', $this->devSerialNumber);
        }
+    }
+
+/**
+ * called after Controller::beforeFilter()
+ */
+    function startup(&$controller) {
+        $HttpSocket = new HttpSocket();
+    }
+
+/**
+ * called after Controller::beforeRender()
+ */
+    function beforeRender(&$controller) {
+    }
+
+/**
+ * called after Controller::render()
+ */
+    function shutdown(&$controller) {
+    }
+
+/**
+ * called before Controller::redirect()
+ */
+    function beforeRedirect(&$controller, $url, $status=null, $exit=true) {
     }
 
 /**
@@ -307,4 +332,5 @@ class SkipjackComponent extends Object {
         $this->response = array();
         $this->errors = array();
     }
+
 }
