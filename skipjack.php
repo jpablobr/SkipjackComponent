@@ -109,18 +109,27 @@ class SkipjackComponent extends Object {
 /**
  * Controller initialization
  */
-    function startup(&$controller) {
-       if($this->serialNumber != null) {
-           $this->addField('SerialNumber', $this->serialNumber);
-       } else {
-           $this->addField('SerialNumber', $this->serialNumber);
-       }
+    function initialize(&$controller, $settings = array()) {
+        $settings = array_merge(array(), (array) $settings);
 
-       if($this->devSerialNumber != null) {
-           $this->addField('DeveloperSerialNumber', $this->devSerialNumber);
-       } else {
-           $this->addfield('DeveloperSerialNumber', $this->devSerialNumber);
-       }
+        if (isset($settings['serialNumber'])) {
+            $this->serialNumber = $settings['serialNumber'];
+        }
+        if (isset($settings['devSerialNumber'])) {
+            $this->serialNumber = $settings['devSerialNumber'];
+        }
+
+        if ($this->serialNumber != null) {
+            $this->addField('SerialNumber', $this->serialNumber);
+        } else {
+            $this->addField('SerialNumber', $this->serialNumber);
+        }
+
+        if ($this->devSerialNumber != null) {
+            $this->addField('DeveloperSerialNumber', $this->devSerialNumber);
+        } else {
+            $this->addfield('DeveloperSerialNumber', $this->devSerialNumber);
+        }
     }
 
 /**
